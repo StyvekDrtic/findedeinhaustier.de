@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  {% include art.html %}
+  {% include head.html %}
+
+  <body {% if page.url != '/' %} class="fixedHeader" {% endif %}>
+
+    {% include header.html %}
+
+    <section class="pomocnikNadpis">
+      <span>{{ page.popis }}</span>
+      <h1>{{ page.nadpis }}</h1>
+    </section>
+
+    <section class="pomocnikContent">
+      <img src="/assets/img/{{ page.obrazek }}" alt="Ilustrace">
+      <p>{{ page.text }}</p>
+    </section>
+
+    <section class="pripraveniRegistrovat">
+      <h2>Jste připraveni ztrátu zaregistrovat?</h2>
+      <p>Po registraci začínáme na Vašem případě ihned pracovat. Denně s Vámi komunikujeme a uděláme vše proto, abychom Vám pomohli.</p>
+      <a class="registrovatZtratu" href="/registrovatztratu">Registrovat ztrátu</a>
+      <a class="registrovatZtratu zjistitViceButton" href="/jaktofunguje">Jak to funguje?</a>
+      <a class="registrovatZtratu zjistitViceButton" href="/procreklamy">Proč reklamy?</a>
+      <a class="registrovatZtratu zjistitViceButton" href="/pribehyostatnich">Příběhy ostatních</a>
+      <a class="registrovatZtratu zjistitViceButton" href="/onas">O nás</a>
+    </section>
+
+    {% if page.clanek == "pes" %}
+    <section class="clanek clanekPrvni">
+      <span>Článek</span>
+      <a href="https://medium.com/@najdimazlicka/5-v%C4%9Bc%C3%AD-kter%C3%A9-je-t%C5%99eba-ud%C4%9Blat-kdy%C5%BE-se-v%C3%A1m-ztrat%C3%AD-pes-58cb96b48775">5 věcí co dělat, když se Vám ztratí pes</a>
+    </section>
+    {% endif %}
+
+    {% if page.clanek == "kocka" %}
+    <section class="clanek clanekPrvni">
+      <span>Článek</span>
+      <a href="https://medium.com/@najdimazlicka/5-věc%C3%AD-které-je-třeba-udělat-když-se-vám-ztrat%C3%AD-kočka-75aaeb47d004">5 věcí co dělat, když se Vám ztratí kočka</a>
+    </section>
+    {% endif %}
+
+    <section class="mateDotaz">
+      <h2>Máte nějaký dotaz?</h2>
+      <a href="tel:00420732400851">+420 732 400 851</a>
+      <p>K dispozici 7 dní v týdnu 8h - 22h</p>
+    </section>
+
+    {% include footer.html %}
+
+  </body>
+</html>

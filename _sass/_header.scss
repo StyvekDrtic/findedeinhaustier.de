@@ -1,0 +1,285 @@
+.mobilniMenuNabidka {
+  position: fixed;
+  display: none;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 4px 9px 0 rgba(0,0,0,0.1);
+  top: 0;
+  width: 100%;
+
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 25px;
+    top: 17px;
+
+    img {
+      width: 40px;
+    }
+  }
+
+  .mobilniMenuZavrit {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 25px;
+    top: 22px;
+
+    img {
+      width: 26px;
+    }
+  }
+
+  nav {
+    margin-top: 90px;
+    text-align: center;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 35px;
+
+        a {
+          font-family: AvenirMedium;
+          font-size: 17px;
+          color: #151515;
+          text-align: center;
+
+          img {
+            height: 30px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+
+    .telefon {
+      background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
+      padding: 15px 0;
+      margin-bottom: 0;
+      margin-top: 50px;
+
+      img {
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+
+      a {
+        font-family: AvenirMedium;
+        font-size: 15px;
+        color: #151515;
+        letter-spacing: 1.76px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  z-index: 100;
+
+  .announcement {
+    width: 100%;
+    background-image: linear-gradient(135deg, #FF8D55 0%, #F96E52 0%, #ED374D 100%, #E9214B 100%);
+
+    p {
+      color: white;
+      font-size: 13px;
+      width: calc(100% - 20px);
+      margin: 0 auto;
+      text-align: center;
+      font-family: AvenirHeavy;
+      padding-top: 3px;
+      padding-bottom: 6px;
+
+      @media screen and (max-width: 340px) {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (min-width: 1100px) {
+      display: none;
+    }
+  }
+
+  .spodniHeader {
+    height: 70px;
+    background: white;
+    position: relative;
+    width: 100%;
+    max-width: calc(1140px + 40px);
+    max-width: calc(1400px + 40px);
+    margin: 0 auto;
+
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      left: 25px;
+      top: 17px;
+
+      img {
+        width: 40px;
+
+        @media screen and (min-width: 1100px) {
+          width: 45px;
+        }
+      }
+
+      @media screen and (min-width: 1100px) {
+        left: 20px;
+        top: 25px;
+      }
+    }
+
+    .desktopMenu {
+      display: none;
+      position: absolute;
+      right: 20px;
+      top: 25px;
+
+      nav {
+        ul {
+          padding: 0;
+          margin: 0;
+
+
+          li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            margin-left: 50px;
+            vertical-align: middle;
+
+            a {
+              font-family: AvenirMedium;
+              font-size: 15px;
+              color: #151515;
+              text-align: center;
+            }
+
+            &:first-child {
+              margin-left: 0;
+            }
+
+            @media screen and (min-width: 1200px) {
+              margin-left: 60px;
+            }
+
+            @media screen and (min-width: 1250px) {
+              margin-left: 70px;
+            }
+
+            @media screen and (min-width: 1400px) {
+              margin-left: 75px;
+            }
+          }
+
+          .telefon {
+            background-image: linear-gradient(135deg, #F9F9F9 0%, #F3F3F3 100%);
+            border-radius: 10px;
+            padding: 10px 20px;
+
+            a {
+              font-family: AvenirBlack;
+              font-size: 15px;
+              color: #000000;
+              letter-spacing: 1px;
+              text-align: center;
+              vertical-align: middle;
+            }
+
+            img {
+              height: 20px;
+              margin-right: 22px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+
+      @media screen and (min-width: 1100px) {
+        display: block;
+      }
+    }
+
+    .mobilniMenu {
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      right: 25px;
+      top: 25px;
+
+      img {
+        width: 23px;
+      }
+
+      @media screen and (min-width: 1100px) {
+        display: none;
+      }
+    }
+
+    .hotlinka {
+      display: none;
+    }
+
+    @media screen and (min-width: 1100px) {
+      height: 90px;
+    }
+  }
+}
+
+.homepageHeader {
+  position: absolute;
+
+  .mobilniMenu {
+    display: none !important;
+
+    @media screen and (min-width: 900px) {
+      display: block !important;
+    }
+  }
+
+  .hotlinka {
+    display: block !important;
+    background-image: linear-gradient(135deg, #FFEEE6 0%, #FCDFE5 100%);
+    border-radius: 5px;
+    font-family: AvenirHeavy;
+    font-size: 16px;
+    color: #FF3939;
+    letter-spacing: 0;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: 19px;
+    right: 15px;
+    padding: 5px 15px;
+
+    span {
+      font-size: AvenirMedium;
+      color: #FE8D8F;
+    }
+
+    @media screen and (min-width: 900px) {
+      display: none !important;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    position: fixed;
+  }
+}

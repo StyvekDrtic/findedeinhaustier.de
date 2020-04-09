@@ -1,0 +1,32 @@
+.napisDokumenty {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  margin: 0 auto;
+  background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+  h1 {
+    width: calc(100% - 40px);
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: AvenirHeavy;
+    font-size: 22px;
+    color: #000000;
+    letter-spacing: 0;
+  }
+}
+
+.mistoNaText {
+  width: calc(100% - 40px);
+  text-align: justify;
+  max-width: 1140px;
+  margin: 0 auto;
+  font-family: AvenirBook;
+
+  strong {
+    font-family: AvenirHeavy;
+  }
+}

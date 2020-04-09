@@ -1,0 +1,110 @@
+footer {
+  width: calc(100% - 20px);
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: calc(90px - 140px);
+  margin-bottom: 10px;
+
+  .topFooter {
+    background: #FFFFFF;
+    border: 1px solid #F7F7F7;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    border-radius: 16px;
+    max-width: 360px;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    position: relative;
+    top: 140px;
+
+    p {
+      font-family: AvenirMedium;
+      font-size: 20px;
+      color: #9C9C9C;
+      letter-spacing: 0;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 30px;
+
+      a {
+        font-family: AvenirHeavy;
+        font-size: 30px;
+        color: #000000;
+        letter-spacing: 0;
+        text-align: center;
+        margin-top: 10px;
+        display: block;
+
+        @media screen and (max-width: 360px) {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      justify-content: space-between;
+      width: 220px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+
+      a {
+        img {
+          width: 52px;
+        }
+      }
+    }
+  }
+
+  .botFooter {
+    background-image: linear-gradient(135deg, #343434 0%, #1D1D1D 100%);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding-top: 140px;
+
+    span {
+      font-family: AvenirHeavy;
+      font-size: 17px;
+      color: #FFFFFF;
+      text-align: center;
+      display: block;
+      margin-bottom: 30px;
+      padding-top: 35px;
+
+      @media screen and (max-width: 340px) {
+        font-size: 15px;
+      }
+    }
+
+    a {
+      font-family: AvenirMedium;
+      font-size: 15px;
+      color: #8D8D8D;
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .karty {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        max-width: 60px;
+        vertical-align: middle;
+        max-height: 25px;
+        margin: 10px;
+      }
+
+      @media screen and (min-width: 900px) {
+        max-width: 800px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    width: calc(100% - 40px);
+  }
+}

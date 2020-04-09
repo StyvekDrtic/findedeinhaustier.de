@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  {% include art.html %}
+  {% include head.html %}
+
+  <body {% if page.url != '/' %} class="fixedHeader" {% endif %}>
+
+
+    <!--<script id="CookieDeclaration" src="https://consent.cookiebot.com/aab558f0-5ed8-4b7d-8639-90c4cfbcee0c/cd.js" type="text/javascript" async></script>-->
+
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+</html>

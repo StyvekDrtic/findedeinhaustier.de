@@ -1,0 +1,71 @@
+/*****************************************
+
+fonts
+
+*****************************************/
+
+@mixin font-face($jmeno, $soubor) {
+  @font-face {
+      font-family: $jmeno; /* deklarace fontu */
+      src: url("../fonts/#{$soubor}"); /* propojení na umístění souboru */
+  }
+}
+
+@include font-face("AvenirBlack", "Avenir-Black.ttf");
+@include font-face("AvenirBlackOblique", "Avenir-BlackOblique.ttf");
+@include font-face("AvenirBook", "Avenir-Book.ttf");
+@include font-face("AvenirBookOblique", "Avenir-BookOblique.ttf");
+@include font-face("AvenirHeavy", "Avenir-Heavy.ttf");
+@include font-face("AvenirHeavyOblique", "Avenir-HeavyOblique.ttf");
+@include font-face("AvenirLight", "Avenir-Light.ttf");
+@include font-face("AvenirLightOblique", "Avenir-LightOblique.ttf");
+@include font-face("AvenirMedium", "Avenir-Medium.ttf");
+@include font-face("AvenirMediumOblique", "Avenir-MediumOblique.ttf");
+@include font-face("AvenirOblique", "Avenir-Oblique.ttf");
+@include font-face("AvenirRoman", "Avenir-Roman.ttf");
+
+/*****************************************
+
+colors
+
+*****************************************/
+
+/*****************************************
+
+defaults
+
+*****************************************/
+
+h1, h2, h3, h4, h5, p, span, a {
+  font-weight: normal !important;
+  font-family: AvenirBook;
+  text-decoration: none;
+  color: #000;
+}
+
+*:focus {
+  outline: none;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+body {
+  padding-top: 100px;
+  padding-top: 70px;
+
+  @media screen and (min-width: 1100px) {
+    padding-top: 90px;
+  }
+}
+
+
+.fixedHeader {
+  padding-top: 70px;
+
+  @media screen and (min-width: 1100px) {
+    padding-top: 90px;
+  }
+}

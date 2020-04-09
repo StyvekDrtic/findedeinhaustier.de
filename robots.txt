@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://najdimazlicka.cz/sitemap.xml

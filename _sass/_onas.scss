@@ -1,0 +1,105 @@
+.onasPage {
+  .napis {
+    background-image: linear-gradient(154deg, #F9F9F9 0%, #F3F3F3 100%);
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    max-width: 600px;
+
+    h1 {
+      font-family: AvenirBlack;
+      font-size: 32px;
+      color: #000000;
+      text-align: center;
+      line-height: 49px;
+      width: calc(100% - 30px);
+      margin: 0 auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    @media screen and (min-width: 900px) {
+      max-width: 1400px;
+      width: calc(100% - 40px);
+    }
+  }
+
+  .oNasStatistiky {
+    ul {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 70px;
+
+      li {
+        padding: 0;
+        margin: 0 auto;
+        list-style: none;
+        margin-top: 40px;
+
+        p {
+          font-family: AvenirMedium;
+          font-size: 16px;
+          color: #000000;
+          text-align: center;
+          margin: 0 auto;
+
+          span {
+            font-family: AvenirBlack;
+            font-size: 33px;
+            color: #000000;
+            text-align: center;
+            line-height: 40px;
+            display: block;
+
+            background: linear-gradient(155deg, #FF8D55 0%, #E9214B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          @media screen and (min-width: 900px) {
+            width: 100%;
+          }
+        }
+
+        @media screen and (min-width: 900px) {
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-bottom: 120px;
+        max-width: 1200px;
+      }
+    }
+  }
+
+  .team {
+    width: calc(100% - 40px);
+    margin-bottom: 90px;
+  }
+
+  p {
+    font-family: AvenirMedium;
+    font-size: 16px;
+    color: #181818;
+    text-align: center;
+    line-height: 36px;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 500px;
+
+    @media screen and (min-width: 900px) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      max-width: 600px;
+    }
+  }
+}

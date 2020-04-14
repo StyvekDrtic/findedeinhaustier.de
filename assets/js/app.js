@@ -14,169 +14,6 @@ $(document).ready(function() {
 });
 
 
-
-
-// pomocnik
-
-var zvire = null;
-var misto = null;
-var cas = null;
-var pocitac = 0;
-var url = "";
-
-$(".radekPomocnik button").click(function() {
-  $(this).parent().children().removeClass("active");
-  $(this).addClass("active");
-});
-
-function setZvire(v) {
-  zvire = v;
-}
-
-function setMisto(p) {
-  misto = p;
-}
-
-function setCas(k) {
-  cas = k;
-}
-
-$('.pojdmeZacitButton').click(function() {
-  pocitac = 0;
-  url = "";
-
-  if (zvire != null) {
-    pocitac++;
-  }
-
-  if (misto != null) {
-    pocitac++;
-  }
-
-  if (cas != null) {
-    pocitac++;
-  }
-
-  if (pocitac >= 3) {
-
-    if (zvire == "pes") {
-      if (misto == "vesnice") {
-        if (cas == "dnes") {
-
-          url = "p_v_pc";
-        }
-
-        if (cas == "dnu") {
-
-          url = "p_v_pd";
-        }
-
-        if (cas == "tyden") {
-
-          url = "p_v_ta";
-        }
-      }
-
-      if (misto == "male") {
-        if (cas == "dnes") {
-
-          url = "p_mm_pc";
-        }
-
-        if (cas == "dnu") {
-
-          url = "p_mm_pd";
-        }
-
-        if (cas == "tyden") {
-
-          url = "p_mm_ta";
-        }
-      }
-
-      if (misto == "velke") {
-        if (cas == "dnes") {
-
-          url = "p_vm_pc";
-        }
-
-        if (cas == "dnu") {
-
-          url = "p_vm_pd";
-        }
-
-        if (cas == "tyden") {
-
-          url = "p_vm_ta";
-        }
-      }
-    }
-
-    if (zvire == "kocka") {
-      if (misto == "vesnice") {
-        if (cas == "dnes") {
-
-          url = "k_v_pc";
-        }
-
-        if (cas == "dnu") {
-
-          url = "k_v_pd";
-        }
-
-        if (cas == "tyden") {
-
-          url = "k_v_ta";
-        }
-      }
-
-      if (misto == "male") {
-        if (cas == "dnes") {
-
-          url = "k_mm_pc";
-        }
-
-        if (cas == "dnu") {
-
-          url = "k_mm_pd";
-        }
-
-        if (cas == "tyden") {
-
-          url = "k_mm_ta";
-        }
-      }
-
-      if (misto == "velke") {
-        if (cas == "dnes") {
-
-          url = "k_vm_pc";
-        }
-
-        if (cas == "dnu") {
-
-          url = "k_vm_pd";
-        }
-
-        if (cas == "tyden") {
-
-          url = "k_vm_ta";
-        }
-      }
-    }
-
-
-    var celyUrl = "/vysledky/"+url;
-
-    window.location.href = celyUrl;
-  }
-
-  else {
-    alert("Nejprve musíte zaškrtnout každou z možností");
-  }
-});
-
-
 //wow
 
 new WOW().init();
@@ -276,12 +113,12 @@ $('a[href*="#"]')
   $(".zobrazitVse span").click(function() {
     if ($(this).parent().parent().hasClass("otevreno")) {
       $(this).parent().parent().removeClass("otevreno");
-      $(this).text("Zobrazit vše");
+      $(this).text("Alle anzeigen");
     }
 
     else {
       $(this).parent().parent().addClass("otevreno");
-      $(this).text("Zavřít");
+      $(this).text("Schließen");
     }
   });
 

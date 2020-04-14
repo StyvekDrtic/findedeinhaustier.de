@@ -170,6 +170,7 @@ header {
               font-size: 15px;
               color: #151515;
               text-align: center;
+              white-space: nowrap;
             }
 
             &:first-child {
@@ -229,7 +230,7 @@ header {
       }
 
       @media screen and (min-width: 1100px) {
-        display: none;
+        display: none !important;
       }
     }
 

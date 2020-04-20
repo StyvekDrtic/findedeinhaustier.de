@@ -45,15 +45,19 @@
 
           span {
             font-family: AvenirBlack;
-            font-size: 33px;
+            font-size: 29px;
             color: #000000;
             text-align: center;
             line-height: 40px;
             display: block;
-
+            margin-bottom: 10px;
             background: linear-gradient(155deg, #FF8D55 0%, #E9214B 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            @media screen and (min-width: 360px) {
+              font-size: 31px;
+            }
           }
 
           @media screen and (min-width: 900px) {
@@ -70,7 +74,7 @@
       @media screen and (min-width: 900px) {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         margin: 0 auto;
         margin-top: 70px;
         margin-bottom: 120px;
@@ -89,8 +93,8 @@
     font-size: 16px;
     color: #181818;
     text-align: center;
-    line-height: 36px;
-    width: calc(100% - 50px);
+    line-height: 26px;
+    width: calc(100% - 40px);
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;

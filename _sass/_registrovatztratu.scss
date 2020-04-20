@@ -16,10 +16,10 @@
 
   h1 {
     font-family: AvenirBlack;
-    font-size: 29px;
+    font-size: 25px;
     color: #000000;
     text-align: center;
-    line-height: 44px;
+    line-height: 40px;
     width: calc(100% - 30px);
     margin: 0 auto;
     padding-top: 30px;
@@ -29,15 +29,16 @@
       max-width: 750px;
       padding-top: 50px;
       font-size: 34px;
+      line-height: 50px;
     }
   }
 
   .subnadpisy {
     font-family: AvenirHeavy;
-    font-size: 27px;
+    font-size: 25px;
     color: #000000;
     text-align: center;
-    line-height: 44px;
+    line-height: 40px;
     width: calc(100% - 40px);
     max-width: 400px;
     margin: 0 auto;
@@ -61,13 +62,14 @@
     }
 
     img {
-      width: 200px;
+      width: 170px;
       margin: 0 auto;
       margin-bottom: 30px;
       display: block;
 
       @media screen and (min-width: 900px) {
         margin: 0;
+        width: 200px;
       }
     }
 
@@ -282,12 +284,16 @@
 
   h2 {
     font-family: AvenirRoman;
-    font-size: 27px;
+    font-size: 25px;
     color: #000000;
     letter-spacing: 0;
     text-align: center;
     margin-top: 0;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 900px) {
+      font-size: 27px;
+    }
   }
 
   .otazky {
@@ -304,9 +310,9 @@
         padding-top: 15px;
         padding-bottom: 15px;
         font-family: AvenirMedium;
-        font-size: 19px;
+        font-size: 18px;
         color: #000000;
-        line-height: 35px;
+        line-height: 31px;
         margin-bottom: 0;
         position: relative;
         width: calc(100% - 30px - 40px);
@@ -329,7 +335,7 @@
         font-family: AvenirRoman;
         font-size: 16px;
         color: #6C6C6C;
-        line-height: 36px;
+        line-height: 30px;
         width: calc(100% - 30px);
         margin: 0 auto;
         padding-bottom: 15px;

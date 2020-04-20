@@ -17,13 +17,15 @@ footer {
     top: 140px;
 
     p {
-      font-family: AvenirMedium;
-      font-size: 20px;
-      color: #9C9C9C;
+      font-family: AvenirHeavy;
+      font-size: 24px;
+      color: #000;
       letter-spacing: 0;
       text-align: center;
+      margin: 0 auto;
       margin-top: 25px;
       margin-bottom: 30px;
+      max-width: 300px;
 
       a {
         font-family: AvenirHeavy;
@@ -43,7 +45,7 @@ footer {
     .social {
       display: flex;
       justify-content: space-between;
-      width: 220px;
+      width: 150px;
       margin: 0 auto;
       margin-bottom: 25px;
 

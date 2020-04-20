@@ -39,7 +39,7 @@
 
   h1 {
     font-family: AvenirBlack;
-    font-size: 32px;
+    font-size: 31px;
     color: #000000;
     letter-spacing: 0;
     text-align: center;
@@ -57,12 +57,13 @@
       margin: 0;
       font-size: 43px;
       width: auto;
-      max-width: 420px;
+      max-width: 450px;
       padding-top: 0;
     }
 
     @media screen and (min-width: 1100px) {
-      font-size: 47px;
+      font-size: 45px;
+      max-width: 500px;
     }
   }
 
@@ -92,7 +93,7 @@
     }
 
     @media screen and (min-width: 1100px) {
-      line-height: 34px;
+      line-height: 32px;
     }
   }
 
@@ -122,6 +123,8 @@
     @media screen and (min-width: 900px) {
       margin: 0;
       display: inline-block;
+      padding: 11px 15px;
+      width: fit-content;
     }
   }
 
@@ -149,7 +152,7 @@
 
     h1 {
       font-family: AvenirBlack;
-      font-size: 32px;
+      font-size: 31px;
       color: #000000;
       letter-spacing: 0;
       text-align: center;
@@ -210,7 +213,7 @@
   letter-spacing: 0;
   text-align: center;
   padding: 11px 0px;
-  width: 200px;
+  width: 270px;
   border-radius: 10px;
   background-image: linear-gradient(135deg, #FF8D55 0%, #E9214B 100%);
   display: block;
@@ -237,11 +240,15 @@
 
   h2 {
     font-family: AvenirMedium;
-    font-size: 27px;
+    font-size: 25px;
     color: #000000;
     text-align: center;
-    line-height: 48px;
+    line-height: 43px;
     margin: 0;
+
+    @media screen and (min-width: 900px) {
+      font-size: 27px;
+    }
   }
 
   ul {
@@ -269,10 +276,10 @@
 
       p {
         font-family: AvenirMedium;
-        font-size: 16px;
+        font-size: 15px;
         color: #939393;
         text-align: center;
-        line-height: 26px;
+        line-height: 24px;
         width: calc(100% - 40px);
         margin: 0 auto;
         max-width: 280px;
@@ -334,7 +341,7 @@
         display: inline-block;
         margin: 0 60px;
         margin-bottom: 80px;
-        vertical-align: bottom;
+        vertical-align: top;
       }
 
       @media screen and (min-width: 1200px) {
@@ -356,7 +363,7 @@
       margin-left: auto;
       margin-right: auto;
       display: flex;
-      align-items: flex-end;
+      align-items: baseline;
       justify-content: space-between;
     }
   }
@@ -398,7 +405,7 @@
         color: rgba(255,255,255,0.50);
         text-align: center;
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 0;
 
         @media screen and (max-width: 350px) {
           font-size: 16px;
@@ -407,11 +414,12 @@
 
       .big {
         font-family: AvenirBlack;
-        font-size: 45px;
+        font-size: 32px;
         color: #FFFFFF;
         text-align: center;
         line-height: 48px;
         display: block;
+        margin: 5px 0;
       }
 
       @media screen and (min-width: 960px) {
@@ -468,9 +476,9 @@
       display: none;
 
       img {
-        height: 27px;
-        padding-top: 17px;
-        padding-bottom: 15.87px;
+        height: 23px;
+        padding-top: 21px;
+        padding-bottom: 21px;
       }
 
       @media screen and (min-width: 900px) {
@@ -479,27 +487,27 @@
     }
 
     li {
-      width: 100px;
+      width: 105px;
       list-style: none;
       padding-top: 15px;
       padding-bottom: 15px;
 
       .featureFotoCesko {
-        height: 43.06px;
-        padding-top: 8.14px;
-        padding-bottom: 8.81px;
+        height: 49px;
+        padding-top: 8px;
+        padding-bottom: 8px;
       }
 
       .featureFotoStopky {
-        height: 52.42px;
-        padding-top: 2.5px;
-        padding-bottom: 5.08px;
+        height: 46px;
+        padding-top: 9.5px;
+        padding-bottom: 9.5px;
       }
 
       .featureFoto74 {
-        height: 28.89px;
-        padding-top: 16.27px;
-        padding-bottom: 14.84px;
+        height: 30px;
+        padding-top: 18.5px;
+        padding-bottom: 16.5px;
       }
 
       img {
@@ -544,7 +552,7 @@
       }
 
       @media screen and (min-width: 900px) {
-        width: 250px;
+        width: 210px;
       }
     }
   }
@@ -823,13 +831,13 @@
 
   h2 {
     font-family: AvenirMedium;
-    font-size: 27px;
+    font-size: 25px;
     color: #000000;
     text-align: center;
-    line-height: 48px;
+    line-height: 37px;
     margin: 0 auto;
     margin-bottom: 40px;
-    width: calc(100% - 50px);
+    width: calc(100% - 40px);
 
     @media screen and (max-width: 350px) {
       font-size: 25px;
@@ -848,7 +856,7 @@
     position: absolute;
     height: calc(100% - 80px);
     width: 200px;
-    top: 80px;
+    top: -10px;
     left: 0;
     z-index: 10;
 
@@ -881,7 +889,7 @@
     position: absolute;
     height: calc(100% - 80px);
     width: 200px;
-    top: 80px;
+    top: -10px;
     right: 0;
     z-index: 10;
 
@@ -1107,7 +1115,7 @@
   }
 
   .registrovatZtratu {
-    width: 240px;
+    width: 310px;
 
     @media screen and (min-width: 900px) {
       margin-top: 80px;
@@ -1189,14 +1197,14 @@
   width: calc(100% - 50px);
   margin: 0 auto;
   margin-top: 100px;
-  max-width: 350px;
+  max-width: 400px;
 
   h2 {
     font-family: AvenirMedium;
     font-size: 22px;
     color: #000000;
     text-align: center;
-    line-height: 40px;
+    line-height: 36px;
     margin-bottom: 50px;
 
     span {
@@ -1204,9 +1212,14 @@
     }
 
     @media screen and (min-width: 900px) {
-      font-size: 27px;
-      line-height: 50px;
+      font-size: 25px;
+      line-height: 40px;
       margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 27px;
+      line-height: 45px;
     }
   }
 
@@ -1295,14 +1308,14 @@
   width: calc(100% - 50px);
   margin: 0 auto;
   margin-top: 90px;
-  max-width: 500px;
+  max-width: 430px;
 
   h2 {
     font-family: AvenirMedium;
-    font-size: 27px;
+    font-size: 25px;
     color: #000000;
     text-align: center;
-    line-height: 48px;
+    line-height: 37px;
     margin: 0 auto;
 
     @media screen and (max-width: 350px) {
@@ -1311,8 +1324,8 @@
     }
 
     @media screen and (min-width: 900px) {
-      font-size: 39px;
-      line-height: 48px;
+      font-size: 27px;
+      line-height: 43px;
     }
   }
 
@@ -1334,7 +1347,7 @@
   }
 
   .registrovatZtratu {
-    width: 230px;
+    width: 280px;
   }
 
   .zjistitViceButton {
@@ -1396,7 +1409,7 @@
 
   h2 {
     font-family: AvenirRoman;
-    font-size: 27px;
+    font-size: 25px;
     color: #000000;
     letter-spacing: 0;
     text-align: center;
@@ -1415,7 +1428,7 @@
 
   a {
     font-family: AvenirHeavy;
-    font-size: 32px;
+    font-size: 31px;
     color: #000000;
     letter-spacing: 0;
     text-align: center;
@@ -1450,7 +1463,7 @@
   p {
     margin: 0;
     font-family: AvenirMedium;
-    font-size: 16px;
+    font-size: 15px;
     color: #ABABAB;
     text-align: center;
     margin-top: 10px;

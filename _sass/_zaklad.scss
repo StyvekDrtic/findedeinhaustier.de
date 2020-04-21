@@ -69,3 +69,34 @@ body {
     padding-top: 90px;
   }
 }
+
+.tasso {
+  img {
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 1px 18px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 1px 18px -1px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 18px -1px rgba(0,0,0,0.2);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+    margin-top: -10px;
+
+    @media screen and (min-width: 900px) {
+      float: right;
+      margin: 30px;
+    }
+  }
+
+  p {
+    font-family: AvenirRoman;
+    font-size: 16px;
+    line-height: 30px;
+    width: calc(100%);
+    margin: 0 auto;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+}

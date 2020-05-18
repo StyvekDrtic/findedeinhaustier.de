@@ -102,6 +102,8 @@ body {
 }
 
 .paypal {
+  text-align: left !important;
+
   .uvod {
     font-family: AvenirMedium;
     margin-bottom: 50px;
@@ -116,5 +118,6 @@ body {
     font-family: AvenirHeavy;
     text-decoration: underline;
     color: #ff1c1c;
+    word-wrap: break-word;
   }
 }

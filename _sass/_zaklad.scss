@@ -100,3 +100,21 @@ body {
     text-align: left;
   }
 }
+
+.paypal {
+  .uvod {
+    font-family: AvenirMedium;
+    margin-bottom: 50px;
+  }
+
+  strong {
+    font-family: AvenirBlack;
+    font-weight: normal;
+  }
+
+  a {
+    font-family: AvenirHeavy;
+    text-decoration: underline;
+    color: #ff1c1c;
+  }
+}

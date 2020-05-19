@@ -96,7 +96,7 @@ $('a[href*="#"]')
   // faq
 
 
-  $(".otazka h3").click(function() {
+  $("body").on('click', '.otazka h3', function() {
     if ($(this).parent().hasClass("zavreno")) {
       $(this).parent().removeClass("zavreno");
     }

@@ -318,6 +318,10 @@
         width: calc(100% - 30px - 40px);
         padding-right: 40px;
 
+        &:hover {
+          cursor: pointer;
+        }
+
         &::after {
           content: " ";
           position: absolute;

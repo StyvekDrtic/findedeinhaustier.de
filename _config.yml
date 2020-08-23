@@ -11,6 +11,7 @@ description: Wir helfen Menschen, ihre vermissten Haustiere mit Anzeigen in sozi
 author: palmmedia.co
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://findedeinhaustier.de/" # the base hostname & protocol for your site
+force_polling: true
 
 # Build settings
 markdown: kramdown
